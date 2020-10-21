@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                         Snackbar.LENGTH_SHORT
                     ).show()
                 } else {
-
+                    questions.removeAt(position)
                     Snackbar.make(
                         binding.rvQuestions.getChildAt(position),
                         "Congratulations, that's the correct answer!",
